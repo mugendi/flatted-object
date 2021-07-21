@@ -1,31 +1,31 @@
 {
-  "name": "flatted-object",
-  "version": "0.1.0",
-  "description": "Module to flatten objects like a pro, with guarantees to avoid losing data in the process.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "flatten",
-    "object",
-    "data",
-    "flat",
-    "minimal",
-    "dot-notation"
-  ],
-  "author": "Anthony Mugendi <ngurumugz@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "dot-object": "^2.1.4"
-  },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mugendi/flatted-object.git"
-  },
-  "bugs": {
-    "url": "https://github.com/mugendi/flatted-object/issues"
-  },
-  "homepage": "https://github.com/mugendi/flatted-object#readme"
+    "name": "flatted-object",
+    "version": "0.1.1",
+    "description": "Module to flatten objects like a pro, with guarantees to avoid losing data in the process.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "flatten",
+        "object",
+        "data",
+        "flat",
+        "minimal",
+        "dot-notation"
+    ],
+    "author": "Anthony Mugendi <ngurumugz@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "dot-object": "^2.1.4"
+    },
+    "devDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mugendi/flatted-object.git"
+    },
+    "bugs": {
+        "url": "https://github.com/mugendi/flatted-object/issues"
+    },
+    "homepage": "https://github.com/mugendi/flatted-object#readme"
 }
