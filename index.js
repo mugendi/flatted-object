@@ -18,20 +18,30 @@ function isObject(obj) {
     return Object.prototype.toString.call(obj) === '[object Object]'
 }
 
+function removeCirculars(value, space) {
+    var cache = [];
 
-// https://stackoverflow.com/a/60711840
-function removeCirculars(obj, depth = 0) {
+    var output = JSON.stringify(value, function(key, value) {
 
-    let json = JSON.stringify(obj, function replacer(key, value) {
+        if (typeof value === 'object' && value !== null) {
+            if (cache.indexOf(value) !== -1) {
+                // Circular reference found, discard key
+                // cache.push(`CIRCULAR <${key}>`)
+                return `CIRCULAR <${key}>`;
+            }
+            // Store value in our collection
+            cache.push(value);
+        }
 
-        if (key != "" && value == obj) {
-            value = `CIRCULAR <${key}>`
-        };
-        return value
-    });
+        return value;
+    }, space)
 
-    return JSON.parse(json);
+    cache = null; // Enable garbage collection
+
+    return JSON.parse(output);
 }
+
+
 
 function flatten_object(sourceObj, rootKey = "") {
 

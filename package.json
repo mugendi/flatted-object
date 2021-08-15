@@ -1,6 +1,6 @@
 {
     "name": "flatted-object",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Module to flatten objects like a pro, with guarantees to avoid losing data in the process.",
     "main": "index.js",
     "scripts": {
